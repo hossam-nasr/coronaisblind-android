@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "267268697534",
+    "firebase_url": "https://coronaisblind-1e81a.firebaseio.com",
+    "project_id": "coronaisblind-1e81a",
+    "storage_bucket": "coronaisblind-1e81a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:267268697534:android:01cd1b89e80c0ffb909def",
+        "android_client_info": {
+          "package_name": "com.coronaisblind.coronaisblindapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "267268697534-7u2e1bhnqn1r52dkjmu09qdtebkp28h2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.coronaisblind.coronaisblindapp",
+            "certificate_hash": "dbfac6c281d3febfca566e1ae867b5d81ecbe3b9"
+          }
+        },
+        {
+          "client_id": "267268697534-pclte8d67sp162r34k9m02ituevlc2ml.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQxwL1Ap36JjW5QKXAUJIVOSmtITWTyMI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "267268697534-pclte8d67sp162r34k9m02ituevlc2ml.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
