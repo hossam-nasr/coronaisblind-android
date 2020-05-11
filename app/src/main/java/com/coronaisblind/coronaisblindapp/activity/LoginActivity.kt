@@ -26,7 +26,7 @@ class LoginActivity : AppCompatActivity() {
         }
 
         btnSignup.setOnClickListener {
-            signup()
+            navigateToSignup()
         }
 
         tvMore.setOnClickListener {
@@ -78,10 +78,6 @@ class LoginActivity : AppCompatActivity() {
         viewModel.loginUser(email, password)
     }
 
-    private fun signup() {
-
-    }
-
     private fun showLoadingState(loading: Boolean) {
         if (loading) {
             tvError.visibility = View.GONE
@@ -101,5 +97,14 @@ class LoginActivity : AppCompatActivity() {
             tvError.visibility = View.VISIBLE
         }
     }
+
+    private fun navigateToSignup() {
+        val intent = Intent(this, SignupActivity::class.java)
+        intent.putExtra("EMAIL", etEmail.text.toString())
+        intent.putExtra("PASSWORD", etPassword.text.toString())
+        startActivity(intent)
+    }
+
+
 
 }
