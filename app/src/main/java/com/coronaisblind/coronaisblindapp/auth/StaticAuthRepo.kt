@@ -2,7 +2,7 @@ package com.coronaisblind.coronaisblindapp.auth
 
 import com.google.firebase.auth.FirebaseAuth
 
-object AuthRepo {
+object StaticAuthRepo {
     private val uid: String = ""
     private val auth: FirebaseAuth = FirebaseAuth.getInstance()
 

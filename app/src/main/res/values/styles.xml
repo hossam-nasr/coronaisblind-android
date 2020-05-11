@@ -1,11 +1,87 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar" >
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="FormFieldHint" parent="TextAppearance.Design.Hint">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorGold</item>
+        <item name="android:layout_margin">10dp</item>
+    </style>
+
+    <style name="FormFieldTextInputLayout" parent="Widget.Design.TextInputLayout">
+        <item name="android:textColorHint">@color/colorPrimaryDark</item>
+        <item name="hintTextAppearance">@style/FormFieldHint</item>
+    </style>
+
+    <style name="FormFieldEditText" parent="Widget.AppCompat.EditText">
+        <item name="android:paddingRight">@dimen/form_field_padding</item>
+        <item name="android:paddingLeft">@dimen/form_field_padding</item>
+        <item name="android:paddingStart">@dimen/form_field_padding</item>
+        <item name="android:paddingEnd">@dimen/form_field_padding</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingTop">@dimen/form_field_hint_margin</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:background">@drawable/form_field</item>
+    </style>
+
+    <style name="ActionButtonMainLarge" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/action_button_main_large</item>
+        <item name="android:height">40dp</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">21sp</item>
+        <item name="android:textAlignment" tools:targetApi="jelly_bean_mr1">center</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ActionButtonMainText">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">21sp</item>
+        <item name="android:textAlignment" tools:targetApi="jelly_bean_mr1">center</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ActionButtonMainSpinner">
+        <item name="android:indeterminateTint" tools:targetApi="lollipop">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="ActionButtonMainLargeLoading" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/action_button_main_large_loading</item>
+        <item name="android:height">40dp</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">21sp</item>
+        <item name="android:textAlignment" tools:targetApi="jelly_bean_mr1">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:enabled">false</item>
+    </style>
+
+    <style name="ActionButtonSecondaryLarge" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/action_button_secondary_large</item>
+        <item name="android:height">40dp</item>
+        <item name="android:textColor">@color/colorBeige</item>
+        <item name="android:textSize">21sp</item>
+        <item name="android:textAlignment" tools:targetApi="jelly_bean_mr1">center</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextHelpMain">
+        <item name="android:textSize">21sp</item>
+        <item name="android:textColor">@color/colorBeige</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextErrorMain">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorError</item>
+        <item name="android:textAlignment" tools:targetApi="jelly_bean_mr1">center</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
 </resources>
