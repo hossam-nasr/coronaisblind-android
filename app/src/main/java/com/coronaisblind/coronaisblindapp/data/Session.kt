@@ -4,12 +4,12 @@ import com.google.firebase.Timestamp
 import java.io.Serializable
 
 data class Session(
-    val id: String,
-    val startDate: Timestamp,
-    val endDate: Timestamp,
-    val number: Int,
-    val activeDay: Int,
-    val active: Boolean?,
-    val done: Boolean?,
-    val users: List<String>?
+    var id: String?,
+    var startDate: Timestamp?,
+    var endDate: Timestamp?,
+    var number: Int?,
+    var activeDay: Int?,
+    var active: Boolean?,
+    var done: Boolean?,
+    var users: List<String>?
 ) : Serializable

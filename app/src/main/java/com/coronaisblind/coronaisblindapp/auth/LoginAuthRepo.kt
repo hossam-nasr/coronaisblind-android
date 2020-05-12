@@ -2,14 +2,16 @@ package com.coronaisblind.coronaisblindapp.auth
 
 import androidx.lifecycle.MutableLiveData
 import com.coronaisblind.coronaisblindapp.data.Resource
+import com.coronaisblind.coronaisblindapp.data.User
 import com.google.android.gms.tasks.OnCompleteListener
 import com.google.firebase.auth.AuthResult
 import com.google.firebase.auth.FirebaseAuth
 import java.util.concurrent.Executor
 
-object DynamicAuthRepo {
+object LoginAuthRepo {
 
     private val auth: FirebaseAuth = FirebaseAuth.getInstance()
+
     val uidResource: MutableLiveData<Resource<String?>> by lazy {
         val currentUser = auth.currentUser
         MutableLiveData<Resource<String?>>(Resource.Success(currentUser?.uid))
@@ -42,22 +44,6 @@ object DynamicAuthRepo {
                 }
             })
 
-    }
-
-    fun signupUser(email: String, password: String) {
-        uidResource.value = Resource.Loading()
-        auth.createUserWithEmailAndPassword(email, password)
-            .addOnCompleteListener(AuthExecutor(),
-                OnCompleteListener<AuthResult> { task ->
-                    if (task.isSuccessful) {
-                        val uid = auth.currentUser!!.uid
-                        uidResource.postValue(Resource.Success(uid))
-                    } else {
-                        uidResource.postValue(
-                            Resource.Error(task.exception?.message ?: "Sign up failed.")
-                        )
-                    }
-                })
     }
 
     class AuthExecutor : Executor {

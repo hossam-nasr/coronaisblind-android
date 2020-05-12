@@ -1,12 +1,11 @@
 package com.coronaisblind.coronaisblindapp.auth
 
-import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import com.coronaisblind.coronaisblindapp.data.Resource
 
 class LoginAuthViewModel : ViewModel() {
-    private val authRepo = DynamicAuthRepo
+    private val authRepo = LoginAuthRepo
     var uidResource: LiveData<Resource<String?>> = authRepo.uidResource
 
 

@@ -4,17 +4,25 @@ import com.google.firebase.Timestamp
 import java.io.Serializable
 
 data class User (
-    val id: String,
-    val email: String,
-    val firstName: String,
-    val lastName: String,
-    val venmo: String,
-    val gender: String,
-    val lookingFor: List<String>,
-    val registration_date: Timestamp,
-    val session: String,
-    val flake: Boolean?,
-    val calls: List<String>?,
-    val callReviewsByMe: List<String>?,
-    val callReviewsAboutMe: List<String>?
-) : Serializable
+    var id: String?,
+    var email: String?,
+    var firstName: String?,
+    var lastName: String?,
+    var venmo: String?,
+    var gender: String?,
+    var lookingFor: List<String>?,
+    var registration_date: Timestamp?,
+    var session: String?,
+    var flake: Boolean?,
+    var friendEmails: String?,
+    var calls: List<String>?,
+    var callReviewsByMe: List<String>?,
+    var callReviewsAboutMe: List<String>?
+) : Serializable{
+
+    companion object {
+        val MALE = "male"
+        val FEMALE = "female"
+        val OTHER = "other"
+    }
+}

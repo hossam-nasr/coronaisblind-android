@@ -11,4 +11,25 @@
     <string name="learn_more">Learn more…</string>
     <string name="error_required">Required</string>
     <string name="error_password_len">Password must be at least 8 characters</string>
+    <string name="signup_title">Sign up for Corona is Blind!</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="venmo">Venmo</string>
+    <string name="venmo_field_info">Please Venmo $15 to @collegequarantine to help run this experience. Let us know if this cost is a financial burden for you. We will be donating 50% of this cost to provide aid to coronavirus patients and medical workers.</string>
+    <string name="gender_hint">I am…</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="other">Other</string>
+    <string name="looking_for_hint">I am interested in people who are…</string>
+    <string name="looking_for_info">This experience does not have to be romantic. Feel free to select all genders if you want to meet people for friends.</string>
+    <string name="friend_referral_hint">Friend Referrals</string>
+    <string name="friend_referral_info">Do you know if any of your friends would be interested in this experience? If so, add their emails here!</string>
+    <string name="approve_hint">All calls this week are going to be between 10–11PM Eastern. By checking this box, I\'m agreeing to this time and will do my best to attend all my calls.</string>
+    <string name="approve_info">Missing calls is not fun for anyone. Please be considerate of others and try to make your calls on time!</string>
+    <string name="agree">I agree</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="login_auth_failed">Authentication Failed.</string>
+    <string name="error_email_format">Invalid email format.</string>
+    <string name="error_password_match">Passwords do not match.</string>
+    <string name="error_looking_for_len">Must select at least one.</string>
 </resources>

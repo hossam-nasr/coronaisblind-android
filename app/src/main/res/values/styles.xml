@@ -11,12 +11,32 @@
     <style name="FormFieldHint" parent="TextAppearance.Design.Hint">
         <item name="android:textSize">16sp</item>
         <item name="android:textColor">@color/colorGold</item>
-        <item name="android:layout_margin">10dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+
+    </style>
+
+    <style name="FormFieldHintSignup" parent="FormFieldHint">
+        <item name="android:textColor">@color/colorSilver</item>
+    </style>
+
+    <style name="FormFieldHintSignupSeparated" parent="FormFieldHintSignup">
+        <item name="android:layout_marginTop">@dimen/form_signup_separation</item>
+    </style>
+
+    <style name="FormFieldTextInputLayoutSeparated" parent="FormFieldTextInputLayoutSignup">
+        <item name="android:layout_marginTop">@dimen/form_signup_separation</item>
     </style>
 
     <style name="FormFieldTextInputLayout" parent="Widget.Design.TextInputLayout">
         <item name="android:textColorHint">@color/colorPrimaryDark</item>
         <item name="hintTextAppearance">@style/FormFieldHint</item>
+    </style>
+
+    <style name="FormFieldTextInputLayoutSignup" parent="FormFieldTextInputLayout">
+        <item name="hintTextAppearance">@style/FormFieldHintSignup</item>
     </style>
 
     <style name="FormFieldEditText" parent="Widget.AppCompat.EditText">
@@ -78,10 +98,21 @@
         <item name="android:textStyle">bold</item>
     </style>
 
+    <style name="TextTitleMain">
+        <item name="android:textSize">26sp</item>
+        <item name="android:textColor">@color/colorGold</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
     <style name="TextErrorMain">
         <item name="android:textSize">16sp</item>
         <item name="android:textColor">@color/colorError</item>
         <item name="android:textAlignment" tools:targetApi="jelly_bean_mr1">center</item>
         <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="FormFieldInfo">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/colorBeige</item>
     </style>
 </resources>

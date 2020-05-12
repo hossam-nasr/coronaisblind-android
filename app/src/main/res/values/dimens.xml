@@ -2,4 +2,5 @@
 <resources>
     <dimen name="form_field_hint_margin">5dp</dimen>
     <dimen name="form_field_padding">20dp</dimen>
+    <dimen name="form_signup_separation">20dp</dimen>
 </resources>

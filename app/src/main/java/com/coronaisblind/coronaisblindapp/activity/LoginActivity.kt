@@ -58,14 +58,17 @@ class LoginActivity : AppCompatActivity() {
     private fun validateForm(): Boolean {
         if (etEmail.text.isNullOrEmpty()) {
             etEmail.error = getString(R.string.error_required)
+            etEmail.requestFocus()
             return false
         }
         if (etPassword.text.isNullOrEmpty()) {
             etPassword.error = getString(R.string.error_required)
+            etPassword.requestFocus()
             return false
         }
         if (etPassword.text.toString().length < 8) {
             etPassword.error = getString(R.string.error_password_len)
+            etPassword.requestFocus()
             return false
         }
         return true
@@ -95,6 +98,7 @@ class LoginActivity : AppCompatActivity() {
         if (message != null) {
             tvError.text = message
             tvError.visibility = View.VISIBLE
+            tvError.requestFocus()
         }
     }
 
