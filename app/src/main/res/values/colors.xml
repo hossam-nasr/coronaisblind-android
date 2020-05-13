@@ -22,4 +22,5 @@
     <color name="colorDone">#DEF9FF</color>
     <color name="colorDoneBg">#597FF48B</color>
     <color name="navBarBg">#412D5C</color>
+    <color name="transparent">#00000000</color>
 </resources>

@@ -138,4 +138,50 @@
         <item name="itemIconTint">@color/colorSilver</item>
         <item name="itemTextColor">@color/colorSilver</item>
     </style>
+
+    <style name="TextTitleDashboard" parent="TextTitleMain">
+        <item name="android:textSize">28sp</item>
+    </style>
+
+    <style name="TextSubtitleMain">
+        <item name="android:textAlignment" tools:targetApi="jelly_bean_mr1">center</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/colorSilver</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextSubtitleDashboard" parent="TextSubtitleMain">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="TextSubSubTitleMain">
+        <item name="android:textAlignment" tools:targetApi="jelly_bean_mr1">center</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/colorSilver</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:fontWeight" tools:targetApi="o">300</item>
+    </style>
+
+    <style name="TextSubSubTitleDashboard" parent="TextSubSubTitleMain">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="TextTitleMainCalls" parent="TextTitleMain">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/colorSilver</item>
+        <item name="android:layout_marginBottom">14dp</item>
+    </style>
+
+    <style name="TextDetails">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/colorSilver</item>
+    </style>
+
+    <style name="ButtonSecondary">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/colorSilver</item>
+        <item name="android:background">@drawable/action_button_secondary</item>
+        <item name="android:layout_height">26dp</item>
+    </style>
+
 </resources>
