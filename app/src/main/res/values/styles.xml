@@ -115,4 +115,27 @@
         <item name="android:textSize">14sp</item>
         <item name="android:textColor">@color/colorBeige</item>
     </style>
+
+<!--    <style name="BottomNavBar" parent="Theme.MaterialComponents">-->
+<!--        <item name="bottomNavigationStyle">@style/Widget.MaterialComponents.BottomNavigationView.Colored</item>-->
+<!--        <item name="colorPrimary">@color/colorNavDisabled</item>-->
+<!--        <item name="colorOnPrimary">@color/colorSilver</item>-->
+<!--    </style>-->
+
+<!--    <style name="Theme.App" parent="Theme.MaterialComponents">-->
+<!--        ...-->
+<!--        <item name="bottomNavigationStyle">@style/Widget.App.BottomNavigationView</item>-->
+<!--    </style>-->
+
+<!--    <style name="Widget.App.BottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView.Colored">-->
+<!--        <item name="materialThemeOverlay">@style/ThemeOverlay.App.BottomNavigationView</item>-->
+<!--    </style>-->
+
+    <style name="BottomNavBar" parent="AppTheme">
+        <item name="colorPrimary">@color/colorNavDisabled</item>
+        <item name="colorOnPrimary">@color/colorSilver</item>
+        <item name="background">@color/navBarBg</item>
+        <item name="itemIconTint">@color/colorSilver</item>
+        <item name="itemTextColor">@color/colorSilver</item>
+    </style>
 </resources>
