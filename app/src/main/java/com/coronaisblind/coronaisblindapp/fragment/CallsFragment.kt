@@ -24,6 +24,7 @@ class CallsFragment : Fragment() {
 
     private val viewModel: DashboardViewModel by viewModels()
     private var currentUser: User? = null
+    lateinit var callAdapter: CallListAdapter
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -36,8 +37,13 @@ class CallsFragment : Fragment() {
             onUserUpdate(it)
         }
 
+        viewModel.previousCallsResource.observe(this) {
+            if (it.status == Resource.Status.SUCCESS && !it.data.isNullOrEmpty()) {
+                updateUI(it.data)
+            }
+        }
+
         initRecyclerView(view)
-        updateUI()
 
         return view
     }
@@ -45,25 +51,17 @@ class CallsFragment : Fragment() {
     private fun onUserUpdate(userResource: Resource<User?>) {
         if (userResource.status == Resource.Status.SUCCESS && userResource.data?.calls.isNullOrEmpty()) {
             currentUser = userResource.data
-            updateUI()
         }
     }
 
-    private fun updateUI() {
-
+    private fun updateUI(list: List<Call>) {
+            callAdapter.updateList(list)
     }
 
     private fun initRecyclerView(rootView: View) {
-        val callList = listOf(
-            Call(name = "Hossam", time = Timestamp.now(), url = ""),
-            Call(name = "Gayar", time = Timestamp.now(), url = ""),
-            Call(name = "Madeline", time = Timestamp.now(), url = "")
-        )
-
-        val adapter = CallListAdapter(activity as Context, callList)
-        Log.d("HELLO", "Adapter is $adapter")
+        callAdapter = CallListAdapter(activity as Context, listOf())
         val rvUpcomingCalls = rootView.findViewById<RecyclerView>(R.id.rvUpcomingCalls)
         rvUpcomingCalls?.layoutManager = LinearLayoutManager(activity)
-        rvUpcomingCalls?.adapter = adapter
+        rvUpcomingCalls?.adapter = callAdapter
     }
 }

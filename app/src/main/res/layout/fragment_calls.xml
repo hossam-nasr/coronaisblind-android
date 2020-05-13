@@ -40,7 +40,7 @@
         android:paddingEnd="16dp"
         android:paddingStart="16dp"
         android:paddingTop="21dp"
-        android:paddingBottom="46dp"
+        android:paddingBottom="21dp"
         android:background="@drawable/transparent_card_bg"
         android:layout_width="match_parent"
         android:gravity="center_horizontal"
@@ -55,11 +55,17 @@
             android:layout_height="wrap_content"
             android:text="@string/upcoming_calls"
             />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rvUpcomingCalls"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvUpcomingCalls"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </ScrollView>
+
     </LinearLayout>
 
 

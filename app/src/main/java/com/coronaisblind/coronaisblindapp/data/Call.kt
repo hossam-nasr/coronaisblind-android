@@ -11,5 +11,6 @@ data class Call(
     var time: Timestamp = Timestamp.now(),
     var url: String = "",
     var user1Id: String = "",
-    var user2Id: String = ""
+    var user2Id: String = "",
+    var reveal: Boolean = false
 ) : Serializable

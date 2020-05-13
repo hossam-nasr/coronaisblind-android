@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.observe
@@ -17,12 +18,14 @@ class HomeFragment : Fragment() {
 
     private val viewModel: DashboardViewModel by viewModels()
     private var currentUser: User? = null
+    private lateinit var rootView: View
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.fragment_home, container, false)
+        rootView = view
 
         viewModel.currentUserResource.observe(this) {
             onUserUpdate(it)
@@ -69,6 +72,7 @@ class HomeFragment : Fragment() {
     }
 
     private fun setViewData() {
+        val tvWelcomeName = rootView.findViewById<TextView>(R.id.tvWelcomeName)
         tvWelcomeName.text = getString(R.string.welcome_name, currentUser?.firstName)
     }
 }

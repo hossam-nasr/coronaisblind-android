@@ -14,7 +14,6 @@ class UserRepo(private val auth: FirebaseAuth, private val db: FirebaseFirestore
     private var uid = auth.currentUser?.uid
 
     init {
-        Log.d("HELLO", "I am here and auth is ${auth} and db is ${db}")
         setAuthListener()
         setCurrentUser()
     }
@@ -22,7 +21,6 @@ class UserRepo(private val auth: FirebaseAuth, private val db: FirebaseFirestore
 
     private fun setAuthListener() {
         auth.addAuthStateListener {
-            Log.d("HELLO", "here")
             uid = it.currentUser?.uid
             if (uid != null) {
                 setUserListener(uid!!)
