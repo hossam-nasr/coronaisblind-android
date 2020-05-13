@@ -6,7 +6,10 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
 import androidx.fragment.app.viewModels
+import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.ViewModelStore
 import androidx.lifecycle.observe
 import com.coronaisblind.coronaisblindapp.R
 import com.coronaisblind.coronaisblindapp.data.Resource
@@ -16,7 +19,7 @@ import kotlinx.android.synthetic.main.logo_and_welcome.*
 
 class HomeFragment : Fragment() {
 
-    private val viewModel: DashboardViewModel by viewModels()
+    private val viewModel: DashboardViewModel by activityViewModels()
     private var currentUser: User? = null
     private lateinit var rootView: View
 
