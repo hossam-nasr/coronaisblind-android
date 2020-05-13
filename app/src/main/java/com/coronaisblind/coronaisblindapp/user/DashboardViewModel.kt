@@ -4,6 +4,7 @@ import androidx.lifecycle.*
 import com.coronaisblind.coronaisblindapp.call.CallRepo
 import com.coronaisblind.coronaisblindapp.data.Call
 import com.coronaisblind.coronaisblindapp.data.Resource
+import com.coronaisblind.coronaisblindapp.session.CurrentSessionRepo
 import com.google.firebase.Timestamp
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
@@ -12,8 +13,10 @@ class DashboardViewModel(savedStateHandle: SavedStateHandle) : ViewModel() {
 
     private val db = FirebaseFirestore.getInstance()
     private val auth = FirebaseAuth.getInstance()
+    private val currentSessionRepo = CurrentSessionRepo(db)
     private val userRepo = UserRepo(auth, db)
     private val callRepo = CallRepo(db, userRepo.currentUserResource, viewModelScope)
+    val currentSessionResource = currentSessionRepo.currentSession
     val currentUserResource = userRepo.currentUserResource
     val upcomingCallsResource: LiveData<Resource<List<Call>>> =
         Transformations.map(callRepo.callListResource) { resource ->
