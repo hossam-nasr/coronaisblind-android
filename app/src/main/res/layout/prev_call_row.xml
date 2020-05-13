@@ -23,7 +23,7 @@
 
     <Button
         style="@style/ButtonSecondary"
-        android:id="@+id/btnGo"
+        android:id="@+id/btnReview"
         android:layout_width="84dp"
-        android:text="@string/go"/>
+        android:text="@string/review"/>
 </LinearLayout>

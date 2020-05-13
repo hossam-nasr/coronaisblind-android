@@ -43,4 +43,6 @@
     <string name="upcoming_calls">Upcoming Calls</string>
     <string name="go">Go!</string>
     <string name="log_out">Log Out</string>
+    <string name="previous_calls">Previous Calls</string>
+    <string name="review">Review</string>
 </resources>
