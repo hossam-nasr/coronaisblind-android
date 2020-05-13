@@ -37,7 +37,7 @@
     <string name="matches_title">Matches</string>
     <string name="info_page_title">Info</string>
     <string name="account_page_title">Account</string>
-    <string name="welcome_name">Hey, $%1s</string>
+    <string name="welcome_name">Hey, %1s</string>
     <string name="welcome_season_episode">Welcome to Corona is Blind Season $%1d Episode $%2d</string>
     <string name="this_week">This Week on Corona is Blind…</string>
     <string name="upcoming_calls">Upcoming Calls</string>
