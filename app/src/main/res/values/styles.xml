@@ -184,4 +184,11 @@
         <item name="android:layout_height">26dp</item>
     </style>
 
+    <style name="ButtonSecondaryDone">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/colorSilver</item>
+        <item name="android:background">@drawable/action_button_secondary_done</item>
+        <item name="android:layout_height">26dp</item>
+    </style>
+
 </resources>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    app:cardBackgroundColor="@color/colorTransparentCard"
+    android:layout_marginTop="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:paddingBottom="25dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvName"
+            style="@style/TextTitleMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="25dp"
+            android:text="Name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvEmail"
+            style="@style/TextSubSubTitleMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="Email"
+            app:layout_constraintStart_toStartOf="@+id/tvName"
+            app:layout_constraintTop_toBottomOf="@+id/tvName" />
+
+        <TextView
+            android:id="@+id/tvSince"
+            style="@style/TextSubSubTitleMain"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Since"
+            app:layout_constraintStart_toStartOf="@+id/tvEmail"
+            app:layout_constraintTop_toBottomOf="@+id/tvEmail" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
+
+

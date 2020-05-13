@@ -60,6 +60,10 @@ class CallRepo(
         }
         val otherUser = getUserFromId(otherUserId)
         call.name = otherUser?.firstName!!
+        if (call.reveal) {
+            call.email = otherUser?.email!!
+            call.lastName = otherUser?.lastName!!
+        }
         return call
     }
 

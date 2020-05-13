@@ -38,11 +38,16 @@
     <string name="info_page_title">Info</string>
     <string name="account_page_title">Account</string>
     <string name="welcome_name">Hey, %1s</string>
+    <string name="full_name">%1s %2s</string>
     <string name="welcome_season_episode">Welcome to Corona is Blind Season %1d Episode %2d</string>
     <string name="this_week">This Week on Corona is Blind…</string>
+    <string name="known_since">Known since: %1s</string>
+    <string name="email_reveal">Email: %1s</string>
     <string name="upcoming_calls">Upcoming Calls</string>
     <string name="go">Go!</string>
     <string name="log_out">Log Out</string>
     <string name="previous_calls">Previous Calls</string>
     <string name="review">Review</string>
+    <string name="your_matches">Your Matches!</string>
+    <string name="done">Done</string>
 </resources>

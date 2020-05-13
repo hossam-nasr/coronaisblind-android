@@ -12,5 +12,7 @@ data class Call(
     var url: String = "",
     var user1Id: String = "",
     var user2Id: String = "",
-    var reveal: Boolean = false
+    var reveal: Boolean = false,
+    var email: String = "",
+    var lastName: String = ""
 ) : Serializable

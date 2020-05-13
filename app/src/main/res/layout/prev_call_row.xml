@@ -22,8 +22,8 @@
         android:layout_height="wrap_content" />
 
     <Button
-        style="@style/ButtonSecondary"
+        style="@style/ButtonSecondaryDone"
         android:id="@+id/btnReview"
         android:layout_width="84dp"
-        android:text="@string/review"/>
+        android:text="@string/done"/>
 </LinearLayout>

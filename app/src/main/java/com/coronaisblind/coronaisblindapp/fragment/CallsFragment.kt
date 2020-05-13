@@ -46,7 +46,7 @@ class CallsFragment : Fragment() {
             onUserUpdate(it)
         }
 
-        viewModel.previousCallsResource.observe(this) {
+        viewModel.upcomingCallsResource.observe(this) {
             if (it.status == Resource.Status.SUCCESS && !it.data.isNullOrEmpty()) {
                 updateUI(it.data)
             }
